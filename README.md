@@ -1,2 +1,2 @@
 # html-css-tutor
-Implement of Minin Vladislav's tutorial
+Implementation of Minin Vladilen's HTML and CSS tutorials

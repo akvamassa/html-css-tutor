@@ -2,80 +2,99 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>AKVA here</title>
+    <title>My turorial's result</title>
+    <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
-    <table cellspacing="15">
-      <tr>
-        <td>
-          <img
-            src="https://sun1-20.userapi.com/s/v1/if1/nT9GyRYIJcp-_CpQF4K2N1qPW6UM4tfl2KdInqi5VtyIOoysi30SV_PVmcZhE47A0QpA4Ytm.jpg?quality=96&crop=61,1,895,895&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&u=BJcm4mYIWQ61Z4lKf6ziCjN_7my0TGpfOrWb93SMu1E&cs=400x400"
-            alt="Konstantin P."
-            width="150px"
-          />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img
+          src="https://sun1-20.userapi.com/s/v1/if1/nT9GyRYIJcp-_CpQF4K2N1qPW6UM4tfl2KdInqi5VtyIOoysi30SV_PVmcZhE47A0QpA4Ytm.jpg?quality=96&crop=61,1,895,895&as=32x32,48x48,72x72,108x108,160x160,240x240,360x360,480x480,540x540,640x640,720x720&ava=1&u=BJcm4mYIWQ61Z4lKf6ziCjN_7my0TGpfOrWb93SMu1E&cs=400x400"
+          alt="Konstantin's avatar"
+          class="avatar-img"
+        />
+
+        <div class="info-text">
           <h1>Pruts Konstantin</h1>
-          <p><em>Hello, you are looking at first attempts in <strong>HTML</strong> tutorial.</em></p>
-          <p>This is the second paragraph.</p>
-        </td>
-      </tr>
-    </table>
-    <hr />
+          <p>Hello! This is me at the photo :)</p>
+          <p>You are looking at my variant of <strong>HTML</strong> tutorial by Minin Vladilen.</p>
 
-    <h2>Social networks</h2>
-    <ul type="circle">
-      <li><a href="https://vk.com/kpruts">VK</a></li>
-      <li><a href="https://instagram.com/akvamassa" target="_blank">Instagram</a></li>
-    </ul>
-    <hr />
+          <h4>My social networks</h4>
+          <a href="https://vk.com/kpruts" target="_blank">VK</a>
+          |
+          <a href="https://instagram.com/akvamassa" target="_blank">Instagram</a>
+        </div>
+      </div>
 
-    <h2>Hobbies</h2>
-    <ol type="I">
-      <li>Cars</li>
-      <li>Girls</li>
-      <li>Rock'n'Roll</li>
-    </ol>
-    <hr />
+      <div class="card bg-yellow">
+        <h2>Hobbies</h2>
+        <ol class="list">
+          <li>Cars</li>
+          <li>Girls</li>
+          <li>Rock'n'Roll</li>
+        </ol>
+      </div>
 
-    <h2>Skills</h2>
-    <table>
-      <tr>
-        <th>Skill</th>
-        <th>Level</th>
-      </tr>
-      <tr>
-        <td>Databases and SQL</td>
-        <td>100%</td>
-      </tr>
-      <tr>
-        <td>Delphi development</td>
-        <td>99%</td>
-      </tr>
-    </table>
-    <hr />
+      <div class="card bg-green">
+        <h2>Skill levels</h2>
+        <table>
+          <tr>
+            <td>Databases and SQL</td>
+            <td>99%</td>
+          </tr>
+          <tr>
+            <td>Delphi development</td>
+            <td>99%</td>
+          </tr>
+          <tr>
+            <td>JavaScript (and TS)</td>
+            <td>69%</td>
+          </tr>
+          <tr>
+            <td>HTML (and CSS)</td>
+            <td>49%</td>
+          </tr>
+        </table>
+      </div>
 
-    <h2>YouTube videos</h2>
-    <a href="youtube.html">Check videos list</a>
-    <hr />
+      <div class="card bg-red">
+        <h2>YouTube videos</h2>
+        <ul class="links-list">
+          <li>
+            <a href="https://www.youtube.com/watch?v=58jGpV2Cg50">Uncle Bob - Clean Code (4)</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=DOEtVdkKwcU">HTML tutorial</a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=SpCUuyZZTp8">CSS tutorial</a>
+          </li>
+        </ul>
+      </div>
 
-    <h2>Contact me</h2>
-    <form action="">
-      <label for="name-input">Your name:</label>
-      <input type="text" id="name-input" placeholder="Ivan Petrov" />
-      <br />
+      <div class="contact">
+        <h2>Contact me</h2>
+        <form action="">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name-input">Your name:</label>
+              <input type="text" id="name-input" placeholder="Ivan Petrov" />
+            </div>
 
-      <label for="mail-input">Your e-mail:</label>
-      <input type="email" id="mail-input" placeholder="you@domain.com" />
-      <br />
+            <div class="form-group">
+              <label for="mail-input">Your e-mail:</label>
+              <input type="email" id="mail-input" placeholder="you@domain.com" />
+            </div>
+          </div>
 
-      <label for="msg-input">Your message:</label>
-      <br />
-      <textarea id="msg-input"></textarea>
-      <br />
+          <div class="form-group">
+            <label for="msg-input">Your message:</label>
+            <textarea id="msg-input"></textarea>
+          </div>
 
-      <input type="submit" value="Contact">
-    </form>
-    <hr />
+          <input class="form-btn" type="submit" value="Send message">
+        </form>
+      </div>
+    </div>
   </body>
 </html>
